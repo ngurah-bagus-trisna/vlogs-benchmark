@@ -504,7 +504,7 @@
       {
         "hide": 2,
         "name": "containers_selector",
-        "query": ".*(vlogs|elastic).*",
+        "query": ".*(vlogs|elastic|loki).*",
         "skipUrlSync": false,
         "type": "constant"
       },
@@ -513,11 +513,13 @@
           "selected": true,
           "text": [
             "logs-benchmark-elastic-1",
-            "logs-benchmark-vlogs-1"
+            "logs-benchmark-vlogs-1",
+            "logs-benchmark-loki-1"
           ],
           "value": [
             "logs-benchmark-elastic-1",
-            "logs-benchmark-vlogs-1"
+            "logs-benchmark-vlogs-1",
+            "logs-benchmark-loki-1"
           ]
         },
         "datasource": {
@@ -536,7 +538,7 @@
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
-        "regex": ".*vlogs|elastic.*",
+        "regex": ".*vlogs|elastic|loki.*",
         "skipUrlSync": false,
         "sort": 1,
         "type": "query"
@@ -551,6 +553,6 @@
   "timezone": "",
   "title": "Elastic vs VLogs",
   "uid": "hkm6P6_4z",
-  "version": 2,
+  "version": 1,
   "weekStart": ""
 }
